@@ -4,6 +4,10 @@ body{
 	color: black;
 	font-weight: bold;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
+
+	background-color: black;
+	outline:1px solid red;
 }
 
 h1,
@@ -16,10 +20,151 @@ h2,
 .product-composition{
 	font-size: 24px;
 	line-height: auto;
-
 }
+
+.features-row,
+.main-footer{
+	color:#f7f4f1;
+}
+
 .features-title{
 	font-size: 30px;
 	line-height: auto;
-	color: #f7f4f1;
+}
+
+/*====== СЕТКА ======*/
+
+.main-header{
+	height: 72px;
+
+	outline:1px solid red;
+
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+	padding: 5px;
+
+	outline:1px solid green;
+}
+
+.main-navigation,
+.user-block{
+	outline:1px solid blue;
+	min-height: 50px;
+}
+
+.main-navigation{
+	width: 700px;
+	float: left;
+	min-height: 30px;
+}
+.main-navigation ul li{
+	display: inline-block;
+}
+
+.user-block{
+	width: 140px;
+	float: right;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.main-container{
+	margin: 30px auto;
+}
+
+.content div{
+	outline:1px solid red;
+}
+
+.logo{
+	width:370px;
+	min-height:180px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+
+	outline:1px solid yellow;
+}
+
+.features-row{
+	margin-bottom: 60px;
+}
+
+.features-item{
+	width: 300px;
+	min-height:200px;
+	float:left;
+
+	outline:1px solid yellow;
+}
+
+.features-item:first-child {
+	margin-right: 29px;
+}
+
+.features-item:last-child {
+	float: right;
+	margin-right: 0;
+}
+
+.index-content{
+	margin-bottom: 30px;
+	padding: 50px 40px;
+
+
+	background-color: white;
+}
+
+.content-column-left,
+.content-column-right{
+	min-height: 340px;
+	width: 390px;
+
+	outline:1px solid red;
+}
+
+.content-column-left{
+	float: left;
+}
+
+.content-column-right{
+	float: right;
+}
+
+.main-footer {
+	padding: 20px 0 10px;
+
+	outline:1px solid red;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright{
+	min-height:100px;
+	float: left;
+
+	outline:1px solid blue;
+}
+
+.footer-social,
+.footer-copyright{
+	width:130px;
+}
+
+.footer-social{
+	margin-left: 95px;
+}
+
+.footer-contacts{
+	width:320px;
+}
+
+.footer-copyright{
+	float: right;
 }
