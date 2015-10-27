@@ -1,0 +1,49 @@
+body{
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 26px;
+	color: black;
+	font-weight: #333;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
+}
+
+nav,
+h2,
+.tag{
+	color: black;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+nav{
+	font-size: 14px;
+}
+
+.features,
+.title-block,
+input[type="submit"]{
+	font-size: 21px;
+	color: white;
+}
+
+.search-title{
+	line-height: 24px;
+}
+.search-title h2{
+	font-size: 30px;
+}
+
+.title-block{
+	font-weight: bold;
+}
+
+.search-form form,
+.copyright{
+	color: black;
+}
+
+.features,
+.tips{
+	line-height: 21px;
+}
