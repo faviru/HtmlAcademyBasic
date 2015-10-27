@@ -44,6 +44,16 @@ input[type="submit"]{
 }
 
 .features,
-.tips{
+.tips,
+.filter-block{
 	line-height: 21px;
+}
+
+.filter-block{
+	color: white;
+}
+
+.filter-block h2{
+	font-size: 16px;
+	color: white;
 }
