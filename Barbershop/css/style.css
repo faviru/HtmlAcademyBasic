@@ -1,3 +1,5 @@
+/*outline'ы для наглядности*/
+
 body{
 	font-size: 14px;
 	line-height: 24px;
@@ -32,19 +34,17 @@ h2,
 	line-height: auto;
 }
 
-/*====== СЕТКА ======*/
+/*======== СЕТКА ========*/
 
 .main-header{
 	height: 72px;
 
 	outline:1px solid red;
-
 }
 
 .container{
 	width: 960px;
 	margin: 0 auto;
-	padding: 5px;
 
 	outline:1px solid green;
 }
@@ -60,7 +60,8 @@ h2,
 	float: left;
 	min-height: 30px;
 }
-.main-navigation ul li{
+
+.main-navigation li{
 	display: inline-block;
 }
 
@@ -79,8 +80,8 @@ h2,
 	margin: 30px auto;
 }
 
-.content div{
-	outline:1px solid red;
+.content-block{
+	background: url("../img/content-pattern.jpg") repeat;
 }
 
 .logo{
@@ -133,9 +134,90 @@ h2,
 	float: left;
 }
 
-.content-column-right{
+.content-column-right,
+.item-right{
 	float: right;
 }
+
+/*======== shop-styles ========*/
+
+.content-block .container{
+	padding: 40px 0px;
+}
+.breadcrumbs{
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+.breadcrumbs li{
+	display: inline-block;
+}
+
+.filter{
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+
+	outline:1px solid red;
+}
+
+.products{
+	float: right;
+	width: 720px;
+
+	outline:1px solid red;
+}
+
+.item{
+	float: left;
+	width: 220px;
+	margin: 10px;
+	height: 286px; /*временно*/
+
+	outline:1px solid green;
+}
+
+.pages-select{
+	margin: 45px 10px;
+}
+
+.pages-select li{
+	display: inline-block;
+}
+
+/*======== item-styles ========*/
+
+.product-gallery{
+	float: left;
+
+	outline:1px solid red;
+}
+
+.product-gallery .photo{
+	margin: 10px;
+}
+.product-gallery .photo:not(.current){
+	display: inline-block;
+}
+
+.product-info{
+	float: right;
+	width: 390px;
+	padding: 20px 10px 0px 10px;
+
+	outline:1px solid red;
+}
+
+.availability,
+.product-id{
+	display: inline-block;
+}
+
+.product-id{
+	float: right;
+	margin-right: 10px;
+}
+/*======== footer-styles ========*/
 
 .main-footer {
 	padding: 20px 0 10px;
