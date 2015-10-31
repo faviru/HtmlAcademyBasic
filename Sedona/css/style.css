@@ -1,11 +1,20 @@
+
+html{
+	height: 100%
+}
+
 body{
+	position: relative;
+	min-height: 100%;
+	height: 100%;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 26px;
 	color: black;
-	font-weight: #333;
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
+	margin: 0;
+	background: #f2f2f2;
 }
 
 nav,
@@ -27,17 +36,6 @@ input[type="submit"]{
 	color: white;
 }
 
-.search-title{
-	line-height: 24px;
-}
-.search-title h2{
-	font-size: 30px;
-}
-
-.title-block{
-	font-weight: bold;
-}
-
 .search-form form,
 .copyright{
 	color: black;
@@ -57,3 +55,197 @@ input[type="submit"]{
 	font-size: 16px;
 	color: white;
 }
+
+p,
+h2{
+	margin: 0;
+}
+/*======== сетка ========*/
+
+header{
+	outline: 1px solid blue;
+}
+
+.container{
+	position: relative;
+	min-height: 100%;
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0px auto;
+
+	outline: 1px solid green;
+}
+
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.main-navigation ul{
+	padding:0;
+	margin: 0;
+}
+.main-navigation li{
+	vertical-align: top;
+	min-height: 55px;
+	display: inline-block;
+	width: 20%;
+
+	outline: 1px solid red;
+}
+
+.sedona-title {
+	display: block;
+	width: 458px;
+	height: 352px;
+	margin: 77px auto 25px auto;
+
+	outline: 1px solid red;
+}
+
+.content-title{
+	width: 495px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 54px;
+
+	outline: 1px solid red;
+}
+
+.features{
+	outline: 1px solid blue;
+}
+
+.text-wrapper,
+.tip-wrapper{
+	width: 33.33%;
+	outline: 1px solid #ff46a4;
+}
+
+.features-left .text-wrapper,
+.tip-wrapper,
+.tripple .text-wrapper{
+	float:left;
+}
+
+.tip-wrapper{
+	height: 188px;
+}
+
+.features-right .text-wrapper{
+	float: right;
+}
+
+.search-block{
+	position: relative;
+	width: 566px;
+	margin: 0 auto;
+	padding-bottom: 86px; /*временно*/
+}
+
+.search-block .title-wrapper{
+	text-align: center;
+}
+
+.search-form{
+	position: absolute;
+	z-index: 1;
+
+	height: 370px; /*временно*/
+
+	background: #fff;
+}
+
+.search-block .title-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 566px;
+	background: #766357;
+	text-align: center;
+}
+
+.transparent-footer{
+	background: rgba(255,255,255, 0.9);
+
+}
+/*========  hotels ========*/
+
+.filter-block form > div{
+	width: 25%;
+	min-height: 215px; 
+}
+
+.infrastructure,
+.type-of-hotel{
+	float: left;
+	outline: 1px solid red;
+}
+
+
+.cost-calculation{
+	float: right;
+
+	outline: 1px solid red;
+}
+
+.sorting-block{
+	min-height: 85px;
+	outline: 1px solid green;
+}
+
+.search-result,
+.sorting{
+	float: left;
+
+}
+
+.sorting-block li{
+	display: inline-block;
+}
+
+.sorting-order{
+	float: right;
+	width: 25%;
+	min-height: 85px;
+
+	outline: 1px solid blue;
+}
+
+.hotels-list article{
+	min-height: 150px; /*временно*/
+
+	outline: 1px solid green;
+}
+
+.hotels-list img{
+	float: left;
+}
+
+.rating{
+	float: right;
+	width: 25%;
+	
+	outline: 1px solid green;
+}
+
+/*======== footer ========*/
+
+footer{
+	position: absolute;
+	min-width: 768px;
+	max-width: 1200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+footer div{
+	float: left;
+	width: 33.33%;
+	height: 120px; /*временно*/
+
+	outline: 1px solid green;
+}
+
