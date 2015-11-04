@@ -4,14 +4,15 @@
 		<meta charset="utf-8">
 		<title>Барбершоп «Бородинский»</title>
 		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 	</head>
 	<body>
-		<header class="main-header">
+		<header class="main-header item-header">
 			<div class="container clearfix">
 				<nav class="main-navigation">
 					<ul>
 						<li>
-							<a href="#">Главная</a>
+							<a href="index.html">Главная</a>
 						</li>
 						<li>
 							<a href="#">Информация</a>
@@ -22,8 +23,8 @@
 						<li>
 							<a href="#">Прайс-лист</a>
 						</li>
-						<li>
-							<a href="#" class="active">Магазин</a>
+						<li class="active">
+							<a href="barbershop-shop.html">Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -38,9 +39,9 @@
 
 		<div class="content-block">
 			<div class="container clearfix">
-				<h2>
+				<h1>
 					Набор для путешествий &laquo;Baxter of California&raquo;
-				</h2>
+				</h1>
 				<ul class="breadcrumbs">
 					<li>
 						<a href="#">Главная</a>
@@ -52,7 +53,7 @@
 						<a href="#">Средства для ухода</a>
 					</li>
 					<li>
-						<a href="#">Набор для путешествий &laquo;Baxter of California&raquo;</a>
+						<a class="active" href="#">Набор для путешествий &laquo;Baxter of California&raquo;</a>
 					</li>
 				</ul>
 				<div class="product-gallery clearfix">
@@ -76,8 +77,10 @@
 					<p class="product-description">
 						Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
 					</p>
-					<p class="price">2 900 руб.</p>
-					<button class="buy-btn">Купить</button>
+					<div class="clearfix">
+						<p class="price">2 900 руб.</p>
+						<button class="btn buy-btn">Купить</button>
+					</div>
 					<div class="product-composition">В набор входят:</div>
 					<ul>
 						<li>
@@ -100,7 +103,7 @@
 			</div>
 		</div>
 
-		<footer class="main-footer">
+		<footer class="main-footer footer-shadow">
 			<div class="container clearfix">
 				<section class="footer-contacts">
 					Барбершоп «Бородинский»<br>
@@ -115,7 +118,7 @@
 					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 				</section>
 				<section class="footer-copyright">
-					<p>Дизайн сайта:</p>
+					<p>Разработано:</p>
 					<a href="#" class="btn">htmlacademy.ru</a>
 				</section>
 			</div>
