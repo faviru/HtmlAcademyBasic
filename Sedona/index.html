@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Sedona</title>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
+
 	<body>
 		<div class="container">
 			<header class="clearfix">
@@ -17,13 +20,10 @@
 							<a href="#">Фото и видео</a>
 						</li>
 						<li>
-							<a href="#"></a>
+							<a href="#">Гостиницы</a>
 						</li>
 						<li>
 							<a href="#">Карта штата</a>
-						</li>
-						<li>
-							<a href="#">Гостиницы</a>
 						</li>
 					</ul>
 				</nav>
@@ -32,7 +32,7 @@
 			<div class="content">
 				<div class="logo-block">
 					<img class="sedona-title" src="img/sedona-title.png" width="458" height="352" alt="Welcome to the gorgeous SEDONA">
-					<img src="img/logo-cutter.png" width="1200" height="57" alt="background-part">
+					<img class="logo-cutter" src="img/logo-cutter.png" width="1200" height="57" alt="background-part">
 				</div>
 				<div class="content-title">
 					<h2>Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
@@ -47,17 +47,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="tips">
-					<div class="tip-wrapper clearfix">
-						<h2>Жилье</h2>
+				<div class="tips clearfix">
+					<div class="tip-wrapper">
+						<h2 class="house">Жилье</h2>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
 					<div class="tip-wrapper">
-						<h2>Еда</h2>
+						<h2 class="meal">Еда</h2>
 						<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
 					</div>
 					<div class="tip-wrapper">
-						<h2>Сувениры</h2>
+						<h2 class="souvenir">Сувениры</h2>
 						<p>Не только китайского, но и местного производства!</p>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="features tripple  clearfix">
+				<div class="features triple  clearfix">
 					<div class="text-wrapper">
 						<div class="text">
 							<h2>Небольшая площадь</h2>
@@ -96,28 +96,35 @@
 				<div class="search-block">
 					<div class="title-wrapper">
 						<h2>Заинтересовались?</h2>
-						<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+						<p>Укажите предполагаемые даты поездки,</br>
+						и мы покажем вам лучшие предложения гостиниц в седоне
 						</p>
 					</div>
-					<div class="search-form">
-					<div class="title-block">
+					<div class="search-title-block">
 						<p>Поиск гостиницы в Седоне</p>
 					</div>
-					<form action="#" method="post">
-						<label for="date-in">Дата заезда:</label>
-						<input type="date" id="date-in" name="date-in">
-						<label for="date-out">Дата выезда:</label>
-						<input type="date" id="date-out" name="date-out">
-						<label for="adults">Взрослые</label>
-						<button>+</button>
-						<input type="text" name="adults" id="adults" pattern="\d [1-12]" value="1">
-						<button>-</button>
-						<label for="children">Дети</label>
-						<button>+</button>
-						<input type="text" name="children" id="children" pattern="\d [0-8]" value="0">
-						<button>-</button>
-						<input type="submit" name="search" value="Найти">
-					</form>
+					<div class="search-form">
+						<form action="#" method="post">
+							<div>
+								<label for="date-in">Дата заезда:</label>
+								<input type="text" id="date-in" name="date-in" placeholder="24 апреля 2016">
+							</div>
+							<div>
+								<label for="date-out">Дата выезда:</label>
+								<input type="text" id="date-out" name="date-out" placeholder="04 июля 2016">
+							</div>
+							<div>
+								<label for="adults">Взрослые:</label>
+								<button type="button" name="plus-adults" class="plus icon-plus"></button>
+								<input type="text" name="adults" id="adults" pattern="\d [1-12]" value="1" disabled>
+								<button type="button" name="minus-adults" class="minus icon-minus"></button>
+								<label for="children">Дети:</label>
+								<button type="button" name="plus-children" class="plus icon-plus"></button>
+								<input type="text" name="children" id="children" pattern="\d [0-8]" value="0" disabled>
+								<button type="button" name="minus-children" class="minus icon-minus"></button>
+							</div>
+							<input type="submit" name="search" value="Найти">
+						</form>
 					</div>
 				</div>
 				<div class="map-block" id="map-block" style="width:1200px; height:595px;">
@@ -129,9 +136,9 @@
 					<a href="https://www.google.ru/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%23visitsedona">#VISITSEDONA</a>
 				</div> 
 				<div class="socials">
-					<a href="#" class="social-btn btn-tw">twitter</a>
-					<a href="#" class="social-btn btn-fb">facebook</a>
-					<a href="#" class="social-btn btn-yt">youtube</a>
+					<a href="#" class="social-btn icon-twitter"></a>
+					<a href="#" class="social-btn icon-facebook"></a>
+					<a href="#" class="social-btn icon-youtube"></a>
 				</div>
 				<div class="copyright">
 					<p>Website by</p>

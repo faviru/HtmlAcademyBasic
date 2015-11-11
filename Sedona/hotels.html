@@ -3,9 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Sedona</title>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
+
 		<div class="container">
 			<header class="clearfix">
 				<nav class="main-navigation">
@@ -17,13 +20,10 @@
 							<a href="#">Фото и видео</a>
 						</li>
 						<li>
-							<a href="#"></a>
+							<a href="#">Гостиницы</a>
 						</li>
 						<li>
 							<a href="#">Карта штата</a>
-						</li>
-						<li>
-							<a href="#">Гостиницы</a>
 						</li>
 					</ul>
 				</nav>
@@ -68,8 +68,10 @@
 						</div>
 						<div class="cost-calculation">
 							<h2>Стоимость в сутки (Р):</h2>
-							<input type="text" name="min-cost" value="от 0" readonly>
-							<input type="text" name="max-cost" value="до 3000" readonly>
+							<div class="range-field">
+								<input type="text" name="min-cost" value="от 0" readonly>
+								<input type="text" name="max-cost" value="до 3000" readonly>
+							</div>
 							<div class="range-bar">
 								<div class="min-value"></div>
 								<div class="max-value"></div>
@@ -100,8 +102,8 @@
 						</ul>
 					</div>
 					<div class="sorting-order">
-						<div class="sort-up"></div>
-						<div class="sort-down"></div>
+						<div class="sort-up active">▲</div>
+						<div class="sort-down">▼</div>
 					</div>
 				</div>
 				<div class="hotels-list">
@@ -114,14 +116,14 @@
 							<a href="#"class="book">Забронировать</a>
 						</div>
 						<div class="rating">
-							<div class=:"stars">
-								<div class="star hidden"></div>
-								<div class="star"></div>
-								<div class="star"></div>
-								<div class="star"></div>
-								<div class="star"></div>
+							<div class="stars">
+								<div class="star hidden">★</div>
+								<div class="star">★</div>
+								<div class="star">★</div>
+								<div class="star">★</div>
+								<div class="star">★</div>
 							</div>
-							<p>Рейтинг:8,5</p>
+							<p>Рейтинг: 8,5</p>
 						</div>
 					</article>
 					<article class="clearfix">
@@ -133,14 +135,14 @@
 							<a href="#"class="book">Забронировать</a>
 						</div>
 						<div class="rating">
-							<div class=:"stars">
-								<div class="star hidden"></div>
-								<div class="star hidden"></div>
-								<div class="star hidden"></div>
-								<div class="star"></div>
-								<div class="star"></div>
+							<div class="stars">
+								<div class="star hidden">★</div>
+								<div class="star hidden">★</div>
+								<div class="star hidden">★</div>
+								<div class="star">★</div>
+								<div class="star">★</div>
 							</div>
-							<p>Рейтинг:8,9</p>
+							<p>Рейтинг: 8,9</p>
 						</div>
 					</article>
 					<article class="clearfix">
@@ -152,14 +154,14 @@
 							<a href="#"class="book">Забронировать</a>
 						</div>
 						<div class="rating">
-							<div class=:"stars">
-								<div class="star hidden"></div>
-								<div class="star hidden"></div>
-								<div class="star"></div>
-								<div class="star"></div>
-								<div class="star"></div>
+							<div class="stars">
+								<div class="star hidden">★</div>
+								<div class="star hidden">★</div>
+								<div class="star">★</div>
+								<div class="star">★</div>
+								<div class="star">★</div>
 							</div>
-							<p>Рейтинг:9,2</p>
+							<p>Рейтинг: 9,2</p>
 						</div>
 					</article>
 				</div>
@@ -168,11 +170,11 @@
 			<footer>
 				<div class="tag">
 					<a href="https://www.google.ru/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%23visitsedona">#VISITSEDONA</a>
-				</div>
+				</div> 
 				<div class="socials">
-					<a href="#" class="social-btn btn-tw"></a>
-					<a href="#" class="social-btn btn-fb"></a>
-					<a href="#" class="social-btn btn-yt"></a>
+					<a href="#" class="social-btn icon-twitter"></a>
+					<a href="#" class="social-btn icon-facebook"></a>
+					<a href="#" class="social-btn icon-youtube"></a>
 				</div>
 				<div class="copyright">
 					<p>Website by</p>
