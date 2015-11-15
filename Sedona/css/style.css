@@ -203,6 +203,7 @@ h2{
 }
 
 .slogo {
+	position: relative;
 	width:138px;
 	margin:0 auto;
 	height:0;
@@ -210,7 +211,7 @@ h2{
 
 .slogo a:after {
 	content:'';
-	width: 100%;
+	width: 138px;
 	height: 70px;
 	position:absolute;
 	z-index:1;
@@ -403,11 +404,12 @@ h2{
 	font-size: 21px;
 	line-height: 24px;
 	color: #fff;
+	cursor: pointer;
 }
 
 /*========== стили форм поиска ==========*/
 
-.search-form{
+.search-form {
 	display: block;
 	position: absolute;
 	z-index: 1;
@@ -419,7 +421,10 @@ h2{
 	font-size: 0px;
 }
 
-.search-form input{
+/*.search-form {
+	display: none;
+}*/
+.search-form input {
 	float: right;
 
 	width: 290px;
@@ -427,6 +432,7 @@ h2{
 	padding: 6px 40px 6px 16px;
 
 	line-height: 26px;
+	height: 26px;
 	font-size: 14px;
 	font-weight: bold;
 	color: #000;
@@ -451,6 +457,7 @@ h2{
 	padding: 6px 0;
 
 	line-height: 26px;
+	height: 26px;
 	font-size: 14px;
 	font-weight: bold;
 	color: #000;
@@ -497,6 +504,7 @@ h2{
 	padding: 6px 9px;
 
 	line-height: 26px;
+	height: 26px;
 	font-size: 14px;
 	background: #f2f2f2;
 	border: none;
@@ -548,10 +556,13 @@ h2{
 }
 
 .search-form input[type="submit"] {
+	float: none;
 	width:100%;
-	padding: 14px 0;
+	padding: 0;
 	margin: 0px;
 	margin-top: 26px;
+	height: 54px;
+	font-size: 21px;
 
 	text-align: center;
 	color: #fff;
@@ -568,6 +579,13 @@ h2{
 	color: #88b6d1;
 	background: #5496bd;
 }
+
+/*========  map ========*/
+
+.map-block {
+	background: #cbdda9 url(../img/static-map.jpg) no-repeat center;
+}
+
 /*========  hotels ========*/
 
 .filter-block {
@@ -982,7 +1000,7 @@ footer div{
 	background: #81b3d2;
 }
 
-.spcials a:hover {
+.socials a:hover {
 	background: #669ec0;
 }
 
