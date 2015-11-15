@@ -177,9 +177,6 @@ h2{
 	text-align: right;
 	float: right;
 }
-.main-navigation ul a:nth-child(3),
-.main-navigation ul a:last-child {
-}
 
 .main-navigation a:hover {
 	color: #89b8d5;
@@ -205,15 +202,20 @@ h2{
 	position: relative;
 }
 
-.main-navigation ul:after{
-	position: absolute;
-	content: '';
-	z-index: 1;
+.slogo {
+	width:138px;
+	margin:0 auto;
+	height:0;
+}
+
+.slogo a:after {
+	content:'';
 	width: 100%;
 	height: 70px;
+	position:absolute;
+	z-index:1;
 	top: 0;
 	left: 0;
-	padding: 0;
 	background: url("../img/sedona-logo.png") no-repeat center;
 }
 
@@ -406,74 +408,31 @@ h2{
 /*========== стили форм поиска ==========*/
 
 .search-form{
+	display: block;
 	position: absolute;
 	z-index: 1;
 	width: 456px;
 	padding: 55px;
 	font-weight: bold;
 	background: #fff;
-}
 
-.search-form div{
-	position: relative;
-	height: 38px;
-	margin-bottom: 30px;
+	font-size: 0px;
 }
 
 .search-form input{
-	position: absolute;
-	padding-left: 12px;
-	width: 334px;
-	height: 38px;
+	float: right;
+
+	width: 290px;
+	margin-bottom: 28px;
+	padding: 6px 40px 6px 16px;
+
 	line-height: 26px;
 	font-size: 14px;
 	font-weight: bold;
 	color: #000;
 	background: #f2f2f2;
 	border: none;
-}
-
-input[name="date-in"],
-input[name="date-out"] {
-	right: 0px;
-}
-
-label[for="date-in"],
-label[for="date-out"] {
-	position: absolute;
-	top: 8px;
-	left: 0px;
-}
-
-label[for="adults"],
-label[for="children"],
-input[name="adults"],
-input[name="children"]{
-	width: 102px;
-	padding: 0;
-}
-
-input[name="adults"],
-input[name="children"] {
-	position: absolute;
-	padding-left: 38px;
-	padding-right: 38px;
-	width: 38px;
-	text-align: center;
-}
-
-label[for="date-in"]::before ,
-label[for="date-out"]::before {
-	position: absolute;
-	content: ' \e800 ';
-	left: 427px;
-	top: -2px;
-	z-index: 2;
-	font-family: "symbols-sedona";
-	font-weight: normal;
-	font-size: 22px;
-	color: #c2c2c2;
-	background: #f2f2f2;
+	outline: none;
 }
 
 .search-form input:hover {
@@ -481,90 +440,123 @@ label[for="date-out"]::before {
 }
 
 .search-form input:focus {
-	outline: 1px solid #e5e5e5;
+	outline: 2px solid #e5e5e5;
 	background: #fff;
 }
 
-.search-form label[for="adults"]{
-	position: absolute;
-	left: 0;
-	top: 8px;
+.search-form label{
+	display: inline-block;
+
+	margin-bottom: 28px;
+	padding: 6px 0;
+
+	line-height: 26px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
 }
 
-.search-form input[name="children"]{
-	right: 0;
+.search-form .time-lbl {
+	float: left;
 }
 
-.search-form label[for="children"]{
-	position: absolute;
-	right: 55px;
-	top: 8px;
-}
-
-.search-form input[name="adults"]{
-	left: 110px;
-}
-
-button[name="plus-adults"],
-button[name="plus-children"],
-button[name="minus-adults"],
-button[name="minus-children"] {
-	position: absolute;
+.search-form .client-type {
 	width: 38px;
-	height: 38px;
-	padding: 0;
-	background: #f2f2f2;
+	padding: 6px 38px;
+	margin-left: 24px;
+
+	text-align: center;
+}
+
+.search-form label[for="children"] {
+	margin-left: 8px;
+	text-align: right;
+}
+
+.search-form .client-type,
+.search-form .client-type-lbl {
+	display: inline-block;
+	float: none;
+}
+
+.search-form .client-type-lbl {
+	width: 86px;
+}
+
+.search-form .age-box {
+	position: relative;
+	display: inline-block;
+}
+
+.search-form button {
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	z-index: 2;
+
+	padding: 6px 9px;
+
+	line-height: 26px;
+	font-size: 14px;
+	background: #f2f2f2;
 	border: none;
 	color: #d2d2d2;
 	font-family: "symbols-sedona";
 }
 
-button[name="plus-adults"] {
-	left: 110px;
+.search-form .plus {
+	left: 100px;
 }
 
-button[name="plus-children"] {
-	left: 342px;
+.search-form .minus {
+	left: 24px;
 }
 
-button[name="minus-adults"] {
-	left: 186px;
+.icon-calendar {
+	display: ;
+	position: relative;
+	float: right;
 }
 
-button[name="minus-children"] {
-	left: 418px;
+.icon-calendar::before {
+	position: absolute;
+	top: 5px;
+	left: 308px;
+
+	width: 30px;
+	height:30px;
+
+	line-height: 26px;
+	font-size: 21px;
+	font-family: "symbols-sedona";
+	color: #c2c2c2;
 }
 
-input[name="date-in"]:hover + label[for="date-in"]::before,
-input[name="date-out"]:hover + label[for="date-out"]::before,
-.search-form button:hover{
-	outline: none;
+.search-form button:hover,
+.icon-calendar:hover::before {
 	color: #000;
 }
 
-input[name="date-in"]:focus + label[for="date-in"]::before,
-input[name="date-out"]:focus + label[for="date-out"]::before,
-.search-form button:active{
-	outline: none;
+.search-form button:active,
+.icon-calendar:active::before {
 	color: #81b3d2;
+	outline: none;
 }
 
-.search-form button:focus{
+.search-form button:focus {
 	outline: none;
 }
 
 .search-form input[type="submit"] {
-	position: static;
-	display: block;
-	width: 100%;
-	font-size: 21px;
-	line-height: 26px;
-	height:auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	width:100%;
+	padding: 14px 0;
+	margin: 0px;
+	margin-top: 26px;
+
+	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
+
 	background: #81b3d2;
 }
 
@@ -573,10 +565,9 @@ input[name="date-out"]:focus + label[for="date-out"]::before,
 }
 
 .search-form input[type="submit"]:active {
-	background: #5496bd;
 	color: #88b6d1;
+	background: #5496bd;
 }
-
 /*========  hotels ========*/
 
 .filter-block {
@@ -710,7 +701,7 @@ input[name="date-out"]:focus + label[for="date-out"]::before,
 .range-bar .max-value {
 	position: absolute;
 	top: -10px;
-	right: 35px;
+	right: 50px;
 	height:2px;
 	width: 2px;
 	background: #ababab;
