@@ -11,6 +11,10 @@
 	var childMinus = form.querySelector("[name=minus-children]");
 	var childField = form.querySelector("[name=children]")
 
+	searchForm.classList.remove("search-form-show");
+	adultField.setAttribute("disabled", true);
+	childField.setAttribute("disabled", true);
+
 	link.addEventListener("click", function(event) {
 		if (searchForm.classList.contains("search-form-show")) {
 			searchForm.classList.remove("search-form-show");
@@ -51,3 +55,12 @@
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
 	})
+
+	function map() {
+		new google.maps.Map(document.getElementById('map-block'), {
+			center: {lat: 34.866217, lng: -111.765563},
+			scrollwheel: false,
+			zoom: 9,
+			disableDefaultUI: true
+		});
+	}

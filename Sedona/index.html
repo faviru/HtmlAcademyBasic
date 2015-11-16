@@ -44,28 +44,28 @@
 						<div class="text">
 							<h2>Настоящий городок</h2>
 							<p class="number">№1</p>
-							<p>Седона -- не аттракцион для туристов, там течет своя жизнь</p>
+							<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 						</div>
 					</div>
 				</div>
 				<div class="tips clearfix">
-					<div class="tip-wrapper">
-						<h2 class="house">Жилье</h2>
+					<div class="tip-wrapper house">
+						<h2>Жилье</h2>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
-					<div class="tip-wrapper">
-						<h2 class="meal">Еда</h2>
+					<div class="tip-wrapper meal">
+						<h2>Еда</h2>
 						<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
 					</div>
-					<div class="tip-wrapper">
-						<h2 class="souvenir">Сувениры</h2>
+					<div class="tip-wrapper souvenir">
+						<h2>Сувениры</h2>
 						<p>Не только китайского, но и местного производства!</p>
 					</div>
 				</div>
 				<div class="features features-right clearfix">
 					<div class="text-wrapper">
 						<div class="text">
-							<h2>Там есть Мост дьявола</h2>
+							<h2>Там есть Мост&nbsp;дьявола</h2>
 							<p class="number">№2</p>
 							<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 						</div>
@@ -83,7 +83,7 @@
 						<div class="text">
 							<h2>Красивая дорога</h2>
 							<p class="number">№4</p>
-							<p>Ехать в Седону из Лас-Вегаса совсем НЕ СКУЧНО!</p>
+							<p>Ехать в Седону из Лас-Вегаса совсем НЕ&nbsp;СКУЧНО!</p>
 						</div>
 					</div>
 					<div class="text-wrapper">
@@ -104,7 +104,7 @@
 					<div class="search-title-block">
 						<p>Поиск гостиницы в Седоне</p>
 					</div>
-					<div class="search-form">
+					<div class="search-form search-form-show">
 						<form action="#" method="post">
 							<label for="date-in" class="time-lbl">Дата заезда:</label>
 							<input type="text" id="date-in" name="date-in" placeholder="24 апреля 2016">
@@ -115,13 +115,13 @@
 							<label for="adults" class="client-type-lbl">Взрослые:</label>
 								<div class="age-box">
 									<button type="button" name="plus-adults" class="plus icon-plus"></button>
-									<input type="text" name="adults" class="client-type" id="adults" pattern="[1-8]" value="1" disabled>
+									<input type="text" name="adults" class="client-type" id="adults" pattern="[1-8]" value="1" maxlength="1">
 									<button type="button" name="minus-adults" class="minus icon-minus"></button>
 								</div>
 							<label for="children" class="client-type-lbl">Дети:</label>
 								<div class="age-box">
 									<button type="button" name="plus-children" class="plus icon-plus"></button>
-									<input type="text" name="children" class="client-type" id="children" pattern="\d [0-8]" value="0" disabled>
+									<input type="text" name="children" class="client-type" id="children" pattern="[0-8]" value="0" maxlength="1">
 									<button type="button" name="minus-children" class="minus icon-minus"></button>
 								</div>
 							<input type="submit" name="search" value="Найти">
@@ -147,15 +147,6 @@
 				</div>
 			</footer>
 		</div>
-		<script>
-			function map(){
-				new google.maps.Map(document.getElementById('map-block'), {
-					center: {lat: 34.866217, lng: -111.765563},
-					scrollwheel: false,
-					zoom: 9
-				});
-			}
-		</script>
 		<script src="js/script.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsnP3frtkwntjpS-QBdxJV-bgsgHaWATA&callback=map" ></script>
 	</body>
