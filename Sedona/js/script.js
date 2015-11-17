@@ -16,6 +16,7 @@
 	childField.setAttribute("disabled", true);
 
 	link.addEventListener("click", function(event) {
+		event.preventDefault();
 		if (searchForm.classList.contains("search-form-show")) {
 			searchForm.classList.remove("search-form-show");
 		} else {
