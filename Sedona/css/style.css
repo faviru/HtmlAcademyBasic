@@ -582,7 +582,7 @@ h2 {
 
 	line-height: 26px;
 	font-size: 21px;
-	font-family: "symbols-sedona", ;
+	font-family: "symbols-sedona", "Arial", sans-serif;
 	color: #c2c2c2;
 }
 
@@ -709,7 +709,7 @@ h2 {
 	content: '\2610';
 	left: 0;
 	font-size: 25px;
-	font-family: "symbols-sedona";
+	font-family: "symbols-sedona", "Arial", sans-serif;
 }
 
 .filter-block input[type="checkbox"]:checked + label::before {
@@ -997,7 +997,7 @@ h2 {
 
 .rating .star {
 	display: inline-block;
-	font-family: "symbols-sedona";
+	font-family: "symbols-sedona", "Arial", sans-serif;
 	font-size: 19px;
 	line-height: 21px;
 	vertical-align: top;
