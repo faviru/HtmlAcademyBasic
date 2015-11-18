@@ -279,8 +279,8 @@ h2 {
 .features h2,
 .tips h2 {
 	width: 160px;
-	margin: 0 auto;
-	height: 42px;
+	margin: 0 auto 30px;
+	height: 21px;
 	overflow: hidden;
 	text-align: center;
 }
@@ -330,7 +330,10 @@ h2 {
 	height: 108px;
 	padding-top: 160px;
 }
-
+.tip-wrapper p:last-child {
+	height: 57px;
+	overflow: hidden;
+}
 .tip-wrapper:before{
 	position: absolute;
 	content: '';
@@ -482,6 +485,7 @@ h2 {
 	font-weight: bold;
 	color: #000;
 	background: #f2f2f2;
+	text-transform: uppercase;
 	border: none;
 	outline: none;
 }
