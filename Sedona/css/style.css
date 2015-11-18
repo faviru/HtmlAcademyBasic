@@ -572,7 +572,7 @@ h2 {
 	float: right;
 }
 
-.icon-calendar::before {
+.icon-calendar:before {
 	position: absolute;
 	top: 5px;
 	left: 308px;
@@ -587,12 +587,12 @@ h2 {
 }
 
 .search-form button:hover,
-.icon-calendar:hover::before {
+.icon-calendar:hover:before {
 	color: #000;
 }
 
 .search-form button:active,
-.icon-calendar:active::before {
+.icon-calendar:active:before {
 	color: #81b3d2;
 	outline: none;
 }
@@ -690,21 +690,21 @@ h2 {
 	cursor: pointer;
 }
 
-.filter-block label::before {
+.filter-block label:before {
 	color: #b5b5b5;
 }
 
-.filter-block label:hover::before {
+.filter-block label:hover:before {
 	color: #fff;
 	cursor: pointer;
 }
 
-.filter-block label:disabled::before {
+.filter-block label:disabled:before {
 	color: #6a6a6a;
 	cursor: pointer;
 }
 
-.filter-block input[type="checkbox"] + label::before {
+.filter-block input[type="checkbox"] + label:before {
 	position: absolute;
 	content: '\2610';
 	left: 0;
@@ -712,7 +712,7 @@ h2 {
 	font-family: "symbols-sedona", "Arial", sans-serif;
 }
 
-.filter-block input[type="checkbox"]:checked + label::before {
+.filter-block input[type="checkbox"]:checked + label:before {
 	content: '\2611';
 }
 
@@ -728,7 +728,7 @@ h2 {
 	text-align: center;
 }
 
-.range-field::after {
+.range-field:after {
 	position: absolute;
 	content: '';
 	top: 5px;
@@ -746,7 +746,7 @@ h2 {
 	border-top: 2px solid rgba(256, 256, 256, 0.5);
 }
 
-.range-bar::before {
+.range-bar:before {
 	position: absolute;
 	content: '';
 	top: -2px;
@@ -869,17 +869,15 @@ h2 {
 
 .sorting-order {
 	float: right;
-	width: 37px;
-	min-height: 11px;
 	margin-top: 39px;
 }
 
-.sorting-order div {
+.sorting-order i {
 	display: inline-block;
 	vertical-align: top;
+	width: 22px;
 	font-size: 23px;
 	line-height: 20px;
-	font-family: "symbols-sedona", "Arial", sans-serif;
 	padding: 0;
 	margin: 0;
 	color: #81b3d2;
@@ -889,11 +887,11 @@ h2 {
 	margin-right: 12px;
 }
 
-.sorting-order .active {
+.sorting-order i.active {
 	color:#ccc;
 }
 
-.sorting-order div:hover {
+.sorting-order i:hover {
 	color: #000;
 	cursor: pointer;
 }
