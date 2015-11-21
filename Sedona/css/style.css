@@ -279,8 +279,8 @@ h2 {
 .features h2,
 .tips h2 {
 	width: 160px;
+	max-height: 42px;
 	margin: 0 auto 30px;
-	height: 21px;
 	overflow: hidden;
 	text-align: center;
 }
@@ -321,7 +321,7 @@ h2 {
 }
 
 .features p:last-child {
-	height: 66px;
+	max-height: 66px;
 	overflow: hidden;
 }
 
@@ -331,7 +331,7 @@ h2 {
 	padding-top: 160px;
 }
 .tip-wrapper p:last-child {
-	height: 57px;
+	max-height: 57px;
 	overflow: hidden;
 }
 .tip-wrapper:before{
@@ -941,7 +941,9 @@ h2 {
 .short-description .type {
 	display: inline-block;
 	vertical-align: top;
-	width: 118px;
+	width: 108px;
+	max-height: 21px;
+	margin-right: 10px;
 	overflow: hidden;
 }
 
